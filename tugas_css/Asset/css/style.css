@@ -1,0 +1,95 @@
+.content{
+    display:inline-flex;
+    /* background-color: aqua; */
+    margin: 20px;
+}
+.content form{
+    display: block;
+}
+
+.content .sidebar .form{
+    margin-top: 30px;
+    border: 1px solid #A9A9A9;
+    display: inline-block;
+    width: 330px;
+
+}
+.content .sidebar .form img{
+    margin: 18px 0;
+}
+.content .sidebar .form form{
+    width: 300px;
+}
+.content .sidebar .form input{
+    width: 85%;
+    padding: 10px;
+    margin: 5px 0;
+    align-items: center;
+    border: 1px solid #A9A9A9;
+}
+.line{
+    background: black;
+    width: 50px;
+    height: 2px;
+}
+.content .sidebar .form button {
+    background-color: #1E90FF;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+    width: 92%;
+    border-radius: 5px;
+  }
+.content .sidebar .form table{
+    margin: -15px 0px;
+}
+  button:hover {
+    opacity: 0.8;
+  }
+
+
+
+
+
+
+
+.content .sidebar .signup{
+    /* margin-left: 10px;
+    margin-top: 10px; */
+    border: 1px solid #A9A9A9;
+    width: 330px;
+    margin-top: 10px;
+}
+footer{
+    margin-top: 30px;
+}
+footer a, p{
+    text-decoration: none;
+    color: #A9A9A9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 8px;
+    /* cursor: pointer; */
+}
+footer .footer2{
+    margin-top: 10px;
+}
+footer .footer3{
+    margin-top: 10px;
+    margin-bottom:20px;
+    display: inline-flex;
+    background-color: red;
+    width: 100%;
+}
+footer .footer .copyright{
+    margin: 0 20px;
+}
+
+
+
+
+
+  

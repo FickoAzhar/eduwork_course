@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <title>Hello, world!</title>
+  </head>
+  <style>
+
+
+    /* navbar */
+    .navbar{
+      width: 100%;
+      padding: 20px 120px;
+      position: fixed;
+      border-bottom: 1px solid rgb(151, 149, 149);
+      z-index: 999;
+    }
+    nav .fitur ul li{
+      margin: 0 10px;
+    }
+    nav .fitur .regist{
+      padding: 0px 25px;
+      background: #00BFFF;
+      border-radius: 20px;
+    }
+    /* hiro image */
+    .hiro-image{
+      height: 640px;
+
+    }
+
+
+
+    /* main */
+    main{
+      margin: 0px 120px;
+    }
+    main .content{
+      padding: 20px;
+  
+    }
+    main .time-line-icon{
+      margin-left: 0px;
+      margin-right: 10px;
+      margin-top: 0px;
+      height: 40px;
+      z-index: 2;
+    }
+    main .time-line-img img{
+      margin-left: -70px;
+      margin-top: 30px;
+      height: 45px;
+      width: 85px;
+      z-index: 1;
+    }
+    main .time-line-icon{
+      color: #00BFFF;
+    }
+    main .content-text{
+      margin-left: -10px;
+      background: #fff;
+      padding-left: 20px;
+      z-index: 3;
+    }
+    main .content-text h5{
+      color: #00BFFF;
+    }
+    .eduwork-step{
+      background-color: #0092ff;
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="logo3.png" alt="" height="30" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end fitur" id="navbarNav">
+          <ul class="navbar-nav px-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Kelas</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Private Mentoring</a></li>
+                <li><a class="dropdown-item" href="#">Webinar</a></li>
+              </ul>
+            </li>
+            <li class="d-flex">
+              
+              <a class="nav-link active" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+              </svg>  Signin</a>
+            </li>
+            <li class="nav-item d-flex regist">
+              <a class="nav-link active" aria-current="page" href="#">Register  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+              </svg></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hiro-image mb-5 bg-warning">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagehiro1.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="imagehiro1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption align-item-center bg-warning">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imagehiro1.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    
+    <main class="mt-5">
+      <div class="edu-about">
+        <div class="row row-cols-md-1">
+          <div class="col-lg-4 d-flex content">
+            <div class="time-line-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-tv" viewBox="0 0 16 16">
+                <path d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM13.991 3l.024.001a1.46 1.46 0 0 1 .538.143.757.757 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.464 1.464 0 0 1-.143.538.758.758 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.464 1.464 0 0 1-.538-.143.758.758 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.46 1.46 0 0 1 .143-.538.758.758 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3h11.991zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z"/>
+              </svg>
+            </div>
+            <div class="time-line-img">
+              <img src="clouds.png" alt="">
+            </div>
+            <div class="content-text">
+              <h5>Apa sih Eduwork itu?</h5>
+              <p>Platform yang membantu kamu mendapatkan pekerjaan, di bimbing oleh mentor yang akan menjadi teman seperjuanganmu dalam belajar & ber-karir.</p>
+            </div>
+            
+          </div>   
+          <div class="col-lg-4 d-flex content">
+            <div class="time-line-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-tv" viewBox="0 0 16 16">
+                <path d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM13.991 3l.024.001a1.46 1.46 0 0 1 .538.143.757.757 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.464 1.464 0 0 1-.143.538.758.758 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.464 1.464 0 0 1-.538-.143.758.758 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.46 1.46 0 0 1 .143-.538.758.758 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3h11.991zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z"/>
+              </svg>
+            </div>
+            <div class="time-line-img">
+              <img src="clouds.png" alt="">
+            </div>
+            <div class="content-text">
+              <h5>Program ISA</h5>
+              <p>Dengan program Income Sharing Agreement, kamu bisa fokus belajar dulu, bayarnya nanti setelah mendapatkan kerja / penghasilan.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex content">
+            <div class="time-line-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg>
+            </div>
+            <div class="time-line-img">
+              <img src="clouds.png" alt="">
+            </div>
+            <div class="content-text">
+              <h5>Berbagai Mentor</h5>
+              <p>Ada berbagai mentor / kelas yang tersedia berbagai bidang. Pilih mentor atau bidang yang kalian inginkan. Dan kejar pekerjaan idaman kalian !</p>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex content">
+            <div class="time-line-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+              </svg>
+            </div>
+            <div class="time-line-img">
+              <img src="clouds.png" alt="">
+            </div>
+            <div class="content-text">
+              <h5>Penyaluran kerja</h5>
+              <p>Setelah lulus kamu akan dibantu untuk mendapatkan pekerjaan sesuai dengan ilmu yang kalian pelajari.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex content">
+            <div class="time-line-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg>
+            </div>
+            <div class="time-line-img">
+              <img src="clouds.png" alt="">
+            </div>
+            <div class="content-text">
+              <h5>Ilmu Praktis</h5>
+              <p>Dibimbing oleh mentor yang berpengalaman di dunia industri, jadi belajar praktek praktis, bukan sebatas teori akademik!</p>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex content">
+            <div class="time-line-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-tv" viewBox="0 0 16 16">
+                <path d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM13.991 3l.024.001a1.46 1.46 0 0 1 .538.143.757.757 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.464 1.464 0 0 1-.143.538.758.758 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.464 1.464 0 0 1-.538-.143.758.758 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.46 1.46 0 0 1 .143-.538.758.758 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3h11.991zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z"/>
+              </svg>
+            </div>
+            <div class="time-line-img">
+              <img src="clouds.png" alt="">
+            </div>
+            <div class="content-text">
+              <h5>Flexible Intensif</h5>
+              <p>Bisa secara Online atau Offline, diskusikan & sepakati saja semuanya dengan mentormu !</p>
+            </div>
+          </div>       
+        </div>
+      </div>
+
+      <!-- <div class="eduwork-step mt-5">
+        <center>
+          <h1>Bagaimana tahapnya?</h1>
+          <p>berikut tahapnya</p>
+        </center>
+        <div class="container mb--5">
+          <div class="row row-cols-lg-3 row-cols-md-1">
+            <ul class="col d-flex">
+              <li><h1 class="border rounded-circle p-4" >1.</h1></li>
+              <li>
+                <h1>Daftar</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur beatae, eius temporibus dolorem delectus est.
+                </p>
+              </li>
+            </ul>
+            <ul class="col d-flex">
+              <li><h1>1.</h1></li>
+              <li>
+                <h1>Daftar</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur beatae, eius temporibus dolorem delectus est.
+                </p>
+              </li>
+            </ul>
+            <ul class="col d-flex">
+              <li><h1>1.</h1></li>
+              <li>
+                <h1>Daftar</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur beatae, eius temporibus dolorem delectus est.
+                </p>
+              </li>
+            </ul>
+            <ul class="col d-flex">
+              <li><h1>1.</h1></li>
+              <li>
+                <h1>Daftar</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur beatae, eius temporibus dolorem delectus est.
+                </p>
+              </li>
+            </ul>
+            <ul class="col d-flex">
+              <li><h1>1.</h1></li>
+              <li>
+                <h1>Daftar</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur beatae, eius temporibus dolorem delectus est.
+                </p>
+              </li>
+            </ul>
+            <ul class="col d-flex">
+              <li><h1>1.</h1></li>
+              <li>
+                <h1>Daftar</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur beatae, eius temporibus dolorem delectus est.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <img src="woman2.jpg" alt="" width="100%" />
+      </div>
+
+      <div class="testimoni mb-5">
+        <center>
+          <h1>Testimonials</h1>
+          <p>Lihat komentar-komentar dari lulusan kami</p>
+        </center>
+        <div class="container row row-cols-md-3 justify-content-center">
+          <div class="card col">
+            <div class="testimoni-profile d-flex">
+              <img src="asset/pajar.jpg" alt="" class="rounded-circle" width="60" height="60">
+              <span>
+                <h2>Pajar</h2>
+                <p>Programmer</p>
+              </span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sapiente. Eos aspernatur ab quaerat error, repellendus accusamus porro obcaecati quod fuga, praesentium a modi laboriosam assumenda pariatur dolor necessitatibus culpa amet temporibus placeat, eligendi voluptatum.</p>
+          </div>
+          <div class="card col">
+            <div class="testimoni-profile d-flex">
+              <img src="asset/pajar.jpg" alt="" class="rounded-circle" width="60" height="60">
+              <span>
+                <h2>Pajar</h2>
+                <p>Programmer</p>
+              </span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sapiente. Eos aspernatur ab quaerat error, repellendus accusamus porro obcaecati quod fuga, praesentium a modi laboriosam assumenda pariatur dolor necessitatibus culpa amet temporibus placeat, eligendi voluptatum.</p>
+          </div>
+          <div class="card col">
+            <div class="testimoni-profile d-flex">
+              <img src="asset/pajar.jpg" alt="" class="rounded-circle" width="60" height="60">
+              <span>
+                <h2>Pajar</h2>
+                <p>Programmer</p>
+              </span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sapiente. Eos aspernatur ab quaerat error, repellendus accusamus porro obcaecati quod fuga, praesentium a modi laboriosam assumenda pariatur dolor necessitatibus culpa amet temporibus placeat, eligendi voluptatum.</p>
+          </div>
+          <div class="card col">
+            <div class="testimoni-profile d-flex">
+              <img src="asset/pajar.jpg" alt="" class="rounded-circle" width="60" height="60">
+              <span>
+                <h2>Pajar</h2>
+                <p>Programmer</p>
+              </span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sapiente. Eos aspernatur ab quaerat error, repellendus accusamus porro obcaecati quod fuga, praesentium a modi laboriosam assumenda pariatur dolor necessitatibus culpa amet temporibus placeat, eligendi voluptatum.</p>
+          </div>
+          <div class="card col">
+            <div class="testimoni-profile d-flex">
+              <img src="asset/pajar.jpg" alt="" class="rounded-circle" width="60" height="60">
+              <span>
+                <h2>Pajar</h2>
+                <p>Programmer</p>
+              </span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sapiente. Eos aspernatur ab quaerat error, repellendus accusamus porro obcaecati quod fuga, praesentium a modi laboriosam assumenda pariatur dolor necessitatibus culpa amet temporibus placeat, eligendi voluptatum.</p>
+          </div>
+          <div class="card col">
+            <div class="testimoni-profile d-flex">
+              <img src="asset/pajar.jpg" alt="" class="rounded-circle" width="60" height="60">
+              <span>
+                <h2>Pajar</h2>
+                <p>Programmer</p>
+              </span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sapiente. Eos aspernatur ab quaerat error, repellendus accusamus porro obcaecati quod fuga, praesentium a modi laboriosam assumenda pariatur dolor necessitatibus culpa amet temporibus placeat, eligendi voluptatum.</p>
+          </div>
+        </div>
+      </div> -->
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
